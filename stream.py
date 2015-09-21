@@ -2,6 +2,8 @@ import pyaudio
 import numpy as np
 import scipy
 import matplotlib
+import db
+import pickle
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 from pylab import *
@@ -11,8 +13,10 @@ class AudioStream(object):
     def __init__(self):
         self.FORMAT = pyaudio.paInt16
         self.CHANNELS = 1
-        self.RATE = 44000
-        self.CHUNK = 2**12
+        self.RATE = 44100
+        self.CHUNK = 2 ** 12
+        self.dm = db.DataManager('learn.db')
+        self.spec_buffer = []
 
     def setup(self):
         self.invHz = 1.0/self.RATE
@@ -48,8 +52,10 @@ class AudioStream(object):
                 self.fft(self.fetch())
                 #self.ys = self.SA.filter_spectrum()
                 self.line.set_ydata(self.ys)
+                self.spec_buffer.append(self.ys)
                 plt.pause(.01)
         except KeyboardInterrupt:
+            self.dm.write_data([raw_input('Input name or classification: '), self.RATE, self.CHUNK, pickle.dumps(self.spec_buffer)])
             self.stop_record()
 
     def start_record(self):
