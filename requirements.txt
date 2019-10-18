@@ -11,7 +11,7 @@ PyAudio==0.2.7
 PyYAML==3.10
 Twisted==14.0.2
 Unirest==1.1.6
-Werkzeug==0.9.4
+Werkzeug==0.15.3
 arvados-python-client==0.1.1410383177.741bf44
 audiolazy==0.05
 backports.ssl-match-hostname==3.4.0.2
