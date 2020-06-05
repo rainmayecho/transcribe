@@ -1,6 +1,6 @@
 BeautifulSoup==3.2.1
 Cython==0.20.1
-Django==1.6.5
+Django==1.11.29
 Flask==0.10.1
 Jinja2==2.7.2
 MarkupSafe==0.18
