@@ -24,7 +24,7 @@ google-api-python-client==1.2
 httplib2==0.8
 ipython==2.3.1
 itsdangerous==0.23
-lxml==3.2.4
+lxml==4.6.3
 matplotlib==1.1.0
 mechanize==0.2.5
 nltk==2.0.4
