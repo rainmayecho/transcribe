@@ -9,7 +9,7 @@ PIL==1.1.7
 PsychoPy==1.81.00rc1
 PyAudio==0.2.7
 PyYAML==3.10
-Twisted==14.0.2
+Twisted==22.1.0
 Unirest==1.1.6
 Werkzeug==0.9.4
 arvados-python-client==0.1.1410383177.741bf44
