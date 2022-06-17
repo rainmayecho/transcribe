@@ -28,7 +28,7 @@ lxml==3.2.4
 matplotlib==1.1.0
 mechanize==0.2.5
 nltk==2.0.4
-numpy==1.6.2
+numpy==1.21.0
 oauthlib==1.0.3
 poster==0.8.1
 py4j==0.8.2.1
