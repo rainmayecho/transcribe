@@ -16,7 +16,7 @@ arvados-python-client==0.1.1410383177.741bf44
 audiolazy==0.05
 backports.ssl-match-hostname==3.4.0.2
 beautifulsoup4==4.3.2
-certifi==14.05.14
+certifi==2022.12.7
 cssselect==0.9.1
 dota2py==0.1.3
 gmpy==1.14
